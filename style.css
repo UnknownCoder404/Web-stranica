@@ -1,0 +1,122 @@
+body {
+  font-family: Roboto, arial, sans-serif;
+}
+.opis-slika-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 550px) {
+  .opis-slika-container {
+    grid-template-columns: 1fr;
+  }
+}
+.opis-container {
+  min-width: 200px;
+}
+.početna-slika {
+  max-width: 100%;
+}
+.djelatnosti-container {
+  margin-top: 10px;
+  border: solid 3px gray;
+  background-color: beige;
+}
+body ul {
+  padding-left: 15px;
+}
+.links-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 2px rgba(128, 128, 128, 0.5);
+}
+@media screen and (max-width: 581px) {
+  .links-container {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+  }
+}
+@media screen and (max-width: 361px) {
+  .links-container {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+}
+.links-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.links-container div a {
+  display: block;
+  width: 100%;
+}
+.links-container div button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: bisque;
+  color: black;
+  border: solid 2px gray;
+  cursor: pointer;
+}
+.links-container div button:hover {
+  opacity: 0.8;
+}
+.podaci-slika {
+  display: inline-block;
+}
+.podaci-naslov {
+  display: inline-block;
+}
+.djelatnosti-lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.djelatnosti-naslov {
+  display: inline-block;
+}
+.djelatnosti-slika {
+  display: inline-block;
+}
+.pravo-slika-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: white;
+  border: solid 2px black;
+}
+.pravo-slika-container h3 {
+  display: inline-block;
+}
+.pravo-slika-container img {
+  max-width: 100px;
+  display: inline-block;
+}
+.pravo-slika-container a {
+  margin-top: 5px;
+  display: block;
+}
+.o-meni-naslov {
+  display: inline-block;
+}
+
+.o-meni-slika {
+  display: inline-block;
+}
+.slika-naslov-container {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+.slika-kontakt-container {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+@media screen and (max-width: 340px) {
+  .slika-kontakt-container img {
+    display: none;
+  }
+}
