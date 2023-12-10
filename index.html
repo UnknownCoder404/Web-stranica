@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta -->
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kako kontaktirati odvjetnika Josipa Čičeka. Koje on djelatnosti i službe u njima radi."
+    />
+    <meta property="title" description="Odvjetnik Josip Čiček" />
+    <meta name="keywords" content="odvjetnik, Zagreb, " />
+
+    <!-- Kraj Meta-->
     <title>Odvjetnik Josip Čiček</title>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -11,9 +21,16 @@
       type="image/x-icon"
     />
     <!--Fontovi-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="font" href="https://fonts.googleapis.com" />
     <link
+      rel="preload"
+      as="font"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      as="font"
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
@@ -60,8 +77,9 @@
 
         <div class="slika-container">
           <img
+            alt="slika-mene"
             class="početna-slika"
-            src="https://raw.githubusercontent.com/UnknownCoder404/Web-stranica/master/slike/šape.png"
+            src="https://raw.githubusercontent.com/UnknownCoder404/Web-stranica/master/slike/šape.webp"
           />
         </div>
       </div>
@@ -69,25 +87,33 @@
     <a id="djelatnosti"></a>
     <div class="djelatnosti-container">
       <div class="slika-naslov-container">
-        <img class="djelatnosti-slika" src="slike/djelatnosti.svg" />
+        <img
+          alt="slika-djelatnosti"
+          class="djelatnosti-slika"
+          src="slike/djelatnosti.svg"
+        />
         <h2 class="djelatnosti-naslov">Djelatnosti</h2>
       </div>
       <div class="djelatnosti-lista">
         <div class="pravo-slika-container">
           <h3>Kazneno pravo</h3>
           <img
-            src="https://raw.githubusercontent.com/UnknownCoder404/Web-stranica/master/slike/kazneno_pravo.jpg"
+            alt="kazneno-pravo"
+            src="https://raw.githubusercontent.com/UnknownCoder404/Web-stranica/master/slike/kazneno_pravo.webp"
           />
           <p>
             Kazneno pravo je grana prava koja se bavi kažnjavanjem kaznenih
             djela. Kazneni zakon propisuje kaznena djela i posebne pretpostavke
             kažnjivosti.
           </p>
-          <a target="_blank" href="kazneno_pravo/index.html">Saznajte više.</a>
+          <a target="_blank" href="djelatnosti/kazneno_pravo/index.html"
+            >Saznajte više.</a
+          >
         </div>
         <div class="pravo-slika-container">
           <h3>Prekršajno pravo</h3>
           <img
+            alt="prekršajno-pravo"
             src="https://raw.githubusercontent.com/UnknownCoder404/Web-stranica/master/slike/prekršajno_pravo.jpg"
           />
           <p>
@@ -96,26 +122,28 @@
             učiniocima, uslovima za propisivanje i izricanje prekršajnih
             sankcija, prekršajnim postupkom i postupkom izvršenja odluke.
           </p>
-          <a target="_blank" href="prekršajno_pravo/index.html"
+          <a target="_blank" href="djelatnosti/prekršajno_pravo/index.html"
             >Saznajte više.</a
           >
         </div>
         <div class="pravo-slika-container">
           <h3>Nasljedno pravo</h3>
           <img
+            alt="nasljedno-pravo"
             src="https://raw.githubusercontent.com/UnknownCoder404/Web-stranica/master/slike/nasljedno_pravo.jpg"
           />
           <p>
             Nasljedno pravo je skup pravnih pravila kojima se uređuje prijelaz
             imovine jedne osobe na druge osobe u slučaju smrti ostavitelja.
           </p>
-          <a target="_blank" href="nasljedno_pravo/index.html"
+          <a target="_blank" href="djelatnosti/nasljedno_pravo/index.html"
             >Saznajte više.</a
           >
         </div>
         <div class="pravo-slika-container">
           <h3>Nekretnine i zemljišno-knjižno pravo</h3>
           <img
+            alt="nekretnine-i-zemljišno-knjižno-pravo"
             src="https://raw.githubusercontent.com/UnknownCoder404/Web-stranica/master/slike/nekretnine_i_zemljišno-knjižno_pravo.jpg"
           />
           <p>
@@ -127,13 +155,15 @@
           </p>
           <a
             target="_blank"
-            href="nekretnine_i_zemljišno-knjižno_pravo/index.html"
+            href="djelatnosti/nekretnine_i_zemljišno-knjižno_pravo/index.html"
             >Saznajte više.</a
           >
         </div>
         <div class="pravo-slika-container">
           <h3>Odštetno pravo</h3>
           <img
+            loading="lazy"
+            alt="odštetno-pravo"
             src="https://raw.githubusercontent.com/UnknownCoder404/Web-stranica/master/slike/odštetno_pravo.jpg"
           />
           <p>
@@ -143,11 +173,15 @@
             štetu, ugovornu odgovornost za štetu i izvanugovornu odgovornost za
             štetu.
           </p>
-          <a target="_blank" href="odštetno_pravo/index.html">Saznajte više.</a>
+          <a target="_blank" href="djelatnosti/odštetno_pravo/index.html"
+            >Saznajte više.</a
+          >
         </div>
         <div class="pravo-slika-container">
           <h3>Ovršno pravo</h3>
           <img
+            loading="lazy"
+            alt="ovršno-pravo"
             src="https://raw.githubusercontent.com/UnknownCoder404/Web-stranica/master/slike/ovršno_pravo.jpg"
           />
           <p>
@@ -156,11 +190,15 @@
             vjerodostojnih isprava (ovršni postupak) te osiguranje tražbine
             (postupak osiguranja).
           </p>
-          <a target="_blank" href="ovršno_pravo/index.html">Saznajte više.</a>
+          <a target="_blank" href="djelatnosti/ovršno_pravo/index.html"
+            >Saznajte više.</a
+          >
         </div>
         <div class="pravo-slika-container">
           <h3>Obiteljsko pravo</h3>
           <img
+            loading="lazy"
+            alt="obiteljsko-pravo"
             src="https://raw.githubusercontent.com/UnknownCoder404/Web-stranica/master/slike/obiteljsko_pravo.jpg"
           />
           <p>
@@ -168,13 +206,15 @@
             obiteljski odnosi, tj. osobnopravni i imovinskopravni odnosi članova
             obitelji te članova obitelji prema trećim osobama.
           </p>
-          <a target="_blank" href="obiteljsko_pravo/index.html"
+          <a target="_blank" href="djelatnosti/obiteljsko_pravo/index.html"
             >Saznajte više.</a
           >
         </div>
         <div class="pravo-slika-container">
           <h3>Upravno i porezno pravo</h3>
           <img
+            loading="lazy"
+            alt="upravno-i-porezno-pravo"
             src="https://raw.githubusercontent.com/UnknownCoder404/Web-stranica/master/slike/upravno_i_porezno_pravo.jpg"
           />
           <p>
@@ -184,13 +224,17 @@
             koji obavljaju upravne poslove.Porezno pravo je dio prava koji se
             bavi regulacijom poreza i drugih javnih davanja.
           </p>
-          <a target="_blank" href="upravno_i_porezno_pravo/index.html"
+          <a
+            target="_blank"
+            href="djelatnosti/upravno_i_porezno_pravo/index.html"
             >Saznajte više.</a
           >
         </div>
         <div class="pravo-slika-container">
           <h3>Trgovačko pravo</h3>
           <img
+            loading="lazy"
+            alt="trgovačko-pravo"
             src="https://raw.githubusercontent.com/UnknownCoder404/Web-stranica/master/slike/trgovačko_pravo.jpg"
           />
           <p>
@@ -200,13 +244,15 @@
             pravo društava) i pravne poslove trgovačkog prava (ugovorno
             trgovačko pravo).
           </p>
-          <a target="_blank" href="trgovačko_pravo/index.html"
+          <a target="_blank" href="djelatnosti/trgovačko_pravo/index.html"
             >Saznajte više.</a
           >
         </div>
         <div class="pravo-slika-container">
           <h3>Ugovori i obvezno pravo</h3>
           <img
+            loading="lazy"
+            alt="ugovori-i-obvezno-pravo"
             src="https://raw.githubusercontent.com/UnknownCoder404/Web-stranica/master/slike/ugovori_i_obvezno_pravo.jpg"
           />
           <p>
@@ -219,7 +265,9 @@
             druge strane (dužnika) da joj nešto učini ili da nešto ne učini na
             što bi inače imala pravo (trpi) ili da nešto propusti.
           </p>
-          <a target="_blank" href="ugovori_i_obvezno_pravo/index.html"
+          <a
+            target="_blank"
+            href="djelatnosti/ugovori_i_obvezno_pravo/index.html"
             >Saznajte više.</a
           >
         </div>
@@ -228,26 +276,36 @@
     <a id="podaci"></a>
     <div class="podaci-container">
       <div class="slika-naslov-container">
-        <img class="podaci-slika" src="slike/contact.svg" />
+        <img
+          loading="lazy"
+          alt="podaci-slika"
+          class="podaci-slika"
+          src="slike/contact.svg"
+        />
         <h2 class="podaci-naslov">Podaci</h2>
       </div>
-      <ul>
-        <div class="slika-kontakt-container">
-          <li class="slika-kontakt-li">
+
+      <div class="slika-kontakt-container">
+        <ul>
+          <li>
             Email:
             <a target="_blank" href="mailto:odvjetnik.josip.cicek@gmail.com"
               >odvjetnik.josip.cicek@gmail.com</a
             >
           </li>
-          <img src="slike/mail.svg" />
-        </div>
-        <div class="slika-kontakt-container">
+        </ul>
+        <img alt="pošta" src="slike/mail.svg" loading="lazy" />
+      </div>
+      <div class="slika-kontakt-container">
+        <ul>
           <li>
             Tel/faks: <a target="_blank" href="tel:015570723">01 5570723</a>
           </li>
-          <img src="slike/telephone.svg" />
-        </div>
-        <div class="slika-kontakt-container">
+        </ul>
+        <img alt="telefon" loading="lazy" src="slike/telephone.svg" />
+      </div>
+      <div class="slika-kontakt-container">
+        <ul>
           <li>
             Adresa:
             <a
@@ -256,29 +314,59 @@
               >Zagreb, Huzjanova 22</a
             >
           </li>
-          <img src="slike/office.svg" />
-        </div>
-      </ul>
+        </ul>
+        <img loading="lazy" alt="ured" src="slike/office.svg" />
+      </div>
+      <div class="maps-iframe-container">
+        <iframe
+          title="moj-ured-lokacija"
+          class="maps-iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2780.7865223002136!2d15.862973474890914!3d45.81553360993059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d1bcac489d4d%3A0xb4e5d23e30505724!2sHuzjanova%20ul.%2022%2C%2010000%2C%20Zagreb!5e0!3m2!1sen!2shr!4v1701615883637!5m2!1sen!2shr"
+          width="300"
+          height="250"
+          style="display: none; border: 0"
+          allowfullscreen="false"
+          loading="eager"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </div>
     <a id="o-meni"></a>
     <div class="o-meni-container">
       <div class="slika-naslov-container">
-        <img class="o-meni-slika" src="slike/o-meni.svg" />
+        <img
+          loading="lazy"
+          alt="o-meni-slika"
+          class="o-meni-slika"
+          src="slike/o-meni.svg"
+        />
         <h2 class="o-meni-naslov">O meni</h2>
       </div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. At earum eaque
-        obcaecati harum temporibus aspernatur perspiciatis quasi hic? Dolores
-        similique laborum minima, fuga repellat sint nostrum incidunt accusamus
-        tempora omnis libero suscipit rem ex vel voluptas enim error fugit totam
-        quaerat ut magni, dolorum nulla nisi eum? Et hic voluptates id ipsa
-        voluptatibus, aperiam veniam officiis. Laudantium voluptatem deserunt
-        aut doloremque dolorum? Enim consectetur facere nobis ea dignissimos
-        esse tempore possimus vel deleniti asperiores et ex in harum quibusdam
-        suscipit architecto, dolor atque? Pariatur eveniet assumenda iste
-        delectus ex, itaque quidem temporibus. Facere molestias totam minus
-        corporis voluptates iure modi.
-      </p>
+      <div class="o-meni-opis-container">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At earum
+          eaque obcaecati harum temporibus aspernatur perspiciatis quasi hic?
+          Dolores similique laborum minima, fuga repellat sint nostrum incidunt
+          accusamus tempora omnis libero suscipit rem ex vel voluptas enim error
+          fugit totam quaerat ut magni, dolorum nulla nisi eum? Et hic
+          voluptates id ipsa voluptatibus, aperiam veniam officiis. Laudantium
+          voluptatem deserunt aut doloremque dolorum? Enim consectetur facere
+          nobis ea dignissimos esse tempore possimus vel deleniti asperiores et
+          ex in harum quibusdam suscipit architecto, dolor atque? Pariatur
+          eveniet assumenda iste delectus ex, itaque quidem temporibus. Facere
+          molestias totam minus corporis voluptates iure modi.
+        </p>
+      </div>
     </div>
+    <h2>Kako pravilno kontaktirati</h2>
+    <p>Kada ćete me kontaktirati, treba navesti nekoliko stvari:</p>
+    <ul>
+      <li>Ime i prezime</li>
+      <li>OIB</li>
+      <li>Lorem.</li>
+      <li>Lorem, ipsum dolor.</li>
+    </ul>
+    <script src="main.js"></script>
+    <script src="fetch.js"></script>
   </body>
 </html>

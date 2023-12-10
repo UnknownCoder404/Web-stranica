@@ -14,15 +14,12 @@ body {
   min-width: 200px;
 }
 .početna-slika {
-  max-width: 100%;
+  width: 100%;
 }
 .djelatnosti-container {
   margin-top: 10px;
   border: solid 3px gray;
   background-color: beige;
-}
-body ul {
-  padding-left: 15px;
 }
 .links-container {
   display: grid;
@@ -75,6 +72,11 @@ body ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+@media screen and (max-width: 580px) {
+  .djelatnosti-lista {
+    grid-template-columns: 1fr;
+  }
+}
 .djelatnosti-naslov {
   display: inline-block;
 }
@@ -91,7 +93,8 @@ body ul {
   display: inline-block;
 }
 .pravo-slika-container img {
-  max-width: 100px;
+  width: 100px;
+  height: 100px;
   display: inline-block;
 }
 .pravo-slika-container a {
@@ -101,8 +104,9 @@ body ul {
 .o-meni-naslov {
   display: inline-block;
 }
-
 .o-meni-slika {
+  width: 24px;
+  height: 24px;
   display: inline-block;
 }
 .slika-naslov-container {
@@ -115,8 +119,34 @@ body ul {
   align-items: center;
   column-gap: 5px;
 }
+.slika-kontakt-container img {
+  width: 24px;
+  height: 24px;
+}
 @media screen and (max-width: 340px) {
   .slika-kontakt-container img {
     display: none;
   }
+}
+.maps-iframe {
+  width: 500px;
+  height: 400px;
+}
+@media screen and (max-width: 520px) {
+  .maps-iframe {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .maps-iframe {
+    height: 200px;
+  }
+}
+.maps-iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slika-kontakt-container ul {
+  margin: 0;
 }

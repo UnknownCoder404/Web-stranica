@@ -1,0 +1,11 @@
+.naslov-slika-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+@media screen and (max-width: 400px) {
+  .privacy-policy-img {
+    display: none;
+  }
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Izjava o privatnosti</title>
     <!--Fontovi-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,7 +15,13 @@
     <!--Kraj fontova-->
   </head>
   <body>
-    <h1>Izjava o privatnosti</h1>
+    <div class="naslov-slika-container">
+      <h1>Izjava o privatnosti</h1>
+      <img class="privacy-policy-img"
+        src="https://raw.githubusercontent.com/UnknownCoder404/Web-stranica/master/slike/izjava_o_privatnosti.svg"
+      />
+    </div>
+
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero tenetur
       recusandae, fugiat totam dolorem dolore earum enim quas sapiente. Et
@@ -51,5 +57,17 @@
       quidem perferendis maxime architecto modi nesciunt quas, rem nam quam
       fugit eveniet dolore, itaque quibusdam culpa?
     </p>
+    <input type="checkbox" class="izjava-o-privatnosti-gumb" name="izjava_o_privatnosti">Prihvaćam da sam pročitao</input>
+    <script>
+      const privacyPolicyButton = document.querySelector('.izjava-o-privatnosti-gumb')
+      privacyPolicyButton.checked =  localStorage.getItem('izjava_o_privatnosti') || false
+      privacyPolicyButton.addEventListener('click', () => {
+        if (privacyPolicyButton.checked) {
+          localStorage.setItem('izjava_o_privatnosti', true)
+        } else {
+          localStorage.setItem('izjava_o_privatnosti', false)
+        }
+      })
+    </script>
   </body>
 </html>
