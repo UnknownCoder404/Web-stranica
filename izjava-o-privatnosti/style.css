@@ -1,3 +1,6 @@
+body {
+  font-family: Roboto, arial, sans-serif;
+}
 .naslov-slika-container {
   display: flex;
   justify-content: center;
