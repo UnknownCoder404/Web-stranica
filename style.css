@@ -29,6 +29,9 @@ body {
 .accessibility-container button:hover {
   background-color: beige;
 }
+.accessibility-container button:focus {
+  background-color: rgb(245, 242, 220);
+}
 .accessibility-container button p {
   display: inline-block;
 }
@@ -181,4 +184,8 @@ body {
 }
 .slika-kontakt-container ul {
   margin: 0;
+}
+.djelatnost-slika-container {
+  display: flex;
+  justify-content: center;
 }
